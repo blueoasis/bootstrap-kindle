@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdowns</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        .show-on-hover:hover > ul.dropdown-menu {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h3>Use the "btn-group" class to create horizontal rows of buttons or dropdown menus (or both)</h3>
+
+    <ul>
+        <li>Create a div with a class of "btn-group" and "show-on-hover"</li>
+        <li>Create a &lt;button&gt; with a class of "dropdown-toggle" as well as a data-toggle="dropdown" attribute.</li>
+        <li>Create a :hover style for the div that toggles the dropdown's visibility</li>
+        <li>Create a ul with a class of "dropdown-menu"</li>
+    </ul>
+
+
+
+    <div class="btn-group show-on-hover">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Dropdown <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="">Some Text Here</a>
+            </li>
+            <li><a href="">Some Text Here</a>
+            </li>
+            <li><a href="">Some Text Here</a>
+            </li>
+            <li><a href="">Some Text Here</a>
+            </li>
+            <li><a href="">Some Text Here</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <h3>Nesting one "btn-group" inside another to create a dropdown menu</h3>
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-default">2</button>
+
+        <div class="btn-group show-on-hover">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Dropdown <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Dropdown link</a>
+                </li>
+                <li><a href="#">Dropdown link</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
